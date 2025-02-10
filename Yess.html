@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Center a Div</title>
+  <style>
+    html, body {
+        background-color: #AC66CC;
+      height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center; /* Horizontally centers */
+      align-items: center; /* Vertically centers */
+    }
+    .centered-div {
+      width: 500px;
+      height: 300px;
+      background-color: lightcoral;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    p{
+        font-size: 2rem;
+        color: #B3E283;
+    }
+    @media (max-width: 768px) {
+      .centered-div {
+        width: 90%;
+        max-width: none;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .centered-div {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="centered-div">
+    <p>🎉CONGRATULATIONS🎉</p>
+  </div>
+
+</body>
+</html>
